@@ -34,7 +34,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((req, res) => 
   callWeatherApi(city, date).then((output) => {
     res.json({ 'fulfillmentText': output }); // Return the results of the weather API to Dialogflow
   }).catch(() => {
-    res.json({ 'fulfillmentText': `I don't know the weather but I hope it's good!` });
+    res.json({ 'fulfillmentText': `Я не зна какая погода, но надеюсь что хорошая!` });
   });
 });
 
@@ -69,7 +69,7 @@ function callWeatherApi (city, date) {
         resolve(output);
       });
       res.on('error', (error) => {
-        console.log(`Error calling the weather API: ${error}`)
+        console.log(`Ошибка при вызове API: ${error}`)
         reject();
       });
     });
