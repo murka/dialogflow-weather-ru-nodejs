@@ -1,6 +1,8 @@
 
 # Dialogflow Fulfillment: Node.js Weather RU
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/murka/dialogflow-weather-ru-nodejs.svg)](https://greenkeeper.io/)
+
 ## Установка Dialogflow и Fulfillment
 Выберите **только один** из вариантов ниже.
 
